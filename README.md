@@ -32,26 +32,26 @@ pip install argparse Pillow scikit-learn numpy
 1. **Extracting main colors and updating configurations:**
 
 ```bash
-python color_extractor.py --image_path example.jpg
+python polywall.py --image_path example.jpg
 ```
 
 2. **Backup and restore configurations:**
 
 ```bash
-python color_extractor.py --action backup
-python color_extractor.py --action restore
+python polywall.py --action backup
+python polywall.py --action restore
 ```
 
 3. **Setting desktop wallpaper:**
 
 ```bash
-python color_extractor.py --image_path wallpaper.jpg
+python polywall.py --image_path wallpaper.jpg
 ```
 
 4. **Using a random image for color extraction:**
 
 ```bash
-python color_extractor.py --random
+python polywall.py --random
 ```
 
 ### Note
