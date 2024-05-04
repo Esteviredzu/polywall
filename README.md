@@ -58,3 +58,10 @@ python color_extractor.py --random
 
 - When using backup or restore action, the script saves/restores current configuration files from the 'backup' folder.
 - Now, with the `--random` flag, you can use random images for color extraction.
+
+![изображение](https://github.com/Esteviredzu/polywall/assets/82750197/60d463c4-5763-4462-b313-06f089f01412)
+![изображение](https://github.com/Esteviredzu/polywall/assets/82750197/72b5932b-32f6-4ac2-be56-085c09b5fa40)
+![изображение](https://github.com/Esteviredzu/polywall/assets/82750197/cb7827f9-7293-405a-b09b-23fd0eaf234f)
+![изображение](https://github.com/Esteviredzu/polywall/assets/82750197/074644e3-911e-4b16-9d37-eee136815673)
+
+
