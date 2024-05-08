@@ -13,19 +13,16 @@ DEFAULT_NUM_COLORS = 3
 logger = logging.getLogger(__name__)
 
 def get_random_image(src_file):
-    # Читаем содержимое файла src
     with open(src_file, 'r') as file:
         paths = file.readlines()
-
-    # Удаляем символы новой строки из путей
+        
     paths = [path.strip() for path in paths]
 
     # Собираем все изображения из указанных директорий
     images = []
     for path in paths:
-        images.extend(glob.glob(os.path.join(path, '*.jpg')))  # Можно изменить расширение по необходимости
+        images.extend(glob.glob(os.path.join(path, '*.jpg')))  
 
-    # Выбираем рандомное изображение
     if images:
         return random.choice(images)
     else:
