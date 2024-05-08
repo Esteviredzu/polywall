@@ -43,6 +43,22 @@ def parse_args():
     parser.add_argument('--random', action='store_true', help='Use a random image from the specified directories')
     return parser.parse_args()
 
+import os
+
+def set_wallpaper(image_path):
+    os.system(f"nitrogen --set-zoom-fill {image_path} > /dev/null 2>&1")
+
+    text = f'''[xin_-1]
+file={image_path}
+mode=0
+bgcolor=#000000'''
+    try:
+        file_path = os.path.expanduser("~/.config/nitrogen/bg-saved.cfg")
+        with open(file_path, 'w') as file:
+            file.write(text)
+        print("Текст успешно записан в файл", file_path)
+    except Exception as e:
+        print("Произошла ошибка при записи в файл:", e)
 
 
 if __name__ == "__main__":
@@ -72,5 +88,5 @@ if __name__ == "__main__":
 
         # if input("Do you want to set wallpaper? (y/n)") == 'y':
         #     os.system(f"feh --bg-scale {args.image_path}")
-        os.system(f"nitrogen --set-zoom-fill {args.image_path} > /dev/null")
+    set_wallpaper(args.image_path)
     logger.info("Goodbye")
