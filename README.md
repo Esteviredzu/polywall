@@ -1,5 +1,4 @@
 # polywall
-# Color Extractor
 
 This script is designed to extract main colors from an image and use them as a color scheme for configuration files of certain Linux applications.
 
